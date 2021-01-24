@@ -1,0 +1,13 @@
+Report  For the problem name planet
+
+1. After a thorough reading, I thought of Djikstra's algorithm because it helps to find the shortest paths between nodes in a graph. In order to obtain those required outputs, I implemented the Djikstra's algorithm which works as follow. firstly, we initialize distances according to the algorithm. Then, Pick first node and calculate distances to adjacent nodes. After, Pick next node with minimal distance; repeat adjacent node distance calculations. At the end, we obtain the final result of shortest path tree. At this stage, I get the maximum weight of this shortest path.
+
+2. Python code
+
+3. What is the complexity of your solution? Can it be improved?
+Let N be the number of teleportation stations. The complexity of my algorithm belongs to O(N**2).
+In fact, the complexity of the function find_shortest_path and get_max_weight in Graph.py is (N+2)**2 and N+1 respectively, the complexity of filling the graph with start node, destination node and weight is N**2, in the same analysis, the complexity of collecting all information from text file is 3*(N-2) where 3 is the size of each coordinate, N-2 number of teleportation. Then, putting everything together, we got 2*(N+2)**2 +  N**2 + 3*(N-2) as complexity which belong to the class of O(N**2).
+
+
+The solution's complexity can be improved by introducing an algorithn that works for negatives edges values. 
+

@@ -1,0 +1,11 @@
+Report  For the problem name pizzeria
+
+1. The pizzeria's problem is related to the concept of minimum spanning tree or MST. That is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. The suitable algorithm used for this problem is Kruskal as it uses the greedy approach to find the MST. A greedy algorithm adds in each step the next lowest-weight edge that will not form a cycle to the minimum spanning tree. In order to obtain those required outputs, I implemented the Kruskal's algorithm.
+
+2. Python code
+
+3. What is the complexity of your solution? Can it be improved?
+Let M be the number of pizzerias and R be the maximum distance that the given pizzeria's delivery guy will travel to deliver pizza. The complexity of my solution is O(M*R).
+In fact, the complexity of the function build_block is (2*R+1) for each pizzeria. Thus, the final complexity of the algorithm is M*(2*R+1) which is equivalent to 2*M*R + M and belongs to O(M*R).
+
+The complexity's solution can be improved by avoiding the formation of cycles. For the same weights this algorithm can become more complex and difficult to develop. 
